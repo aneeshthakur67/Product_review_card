@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+background:hsl(30, 38%, 92%) ;
+margin: 0;
+box-sizing: border-box;
+font-size:0.875rem ;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    top:3.8rem;
+    display: flex;
+    max-width:37.5rem;
+    height: 28.125rem;
+    border-radius: 6rem;
+}
+.left-section{
+display: flex;
+width:50%;
+}
+.product-pic-desktop{
+    border-radius: 14px 0px 0px 14px ;
+}
+.product-pic-mobile{
+    position: relative;
+    left:-4.5rem;
+    width: 18.4rem;
+    display: none;
+}
+.right-section{
+    background-color:white;
+    display: flex;
+    max-width: 15rem;
+    flex-direction: column;
+    padding: 1.8rem;
+    border-radius: 0px 14px 14px 0px ;
+}
+.product{
+    letter-spacing: .37rem;
+    text-transform: uppercase;
+    color:hsl(228, 12%, 48%);
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+.name{
+    font-size: 1.88rem;
+    font-weight: 700;
+    font-family:'Fraunces', serif ;
+}
+.description{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.52rem;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+    font-family: 'Fraunces', serif;;
+}
+.new-price{
+    color:hsl(158, 36%, 37%);
+    font-size: 1.925rem ;
+    margin-right: 3rem;
+    font-weight: 900;
+}
+.old-price{
+text-decoration: line-through;
+font-size: 0.9rem;
+color: hsl(228, 12%, 48%);
+}
+
+.add{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border:none;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 800;
+    transition: background 0.15s ease-in-out;
+    vertical-align: middle;
+    padding: 0.8rem 3.5rem;
+}
+.add:hover{
+    background: #2A5A49;
+}
+.add img{
+margin-right: 10px;
+vertical-align: middle;
+}
+@media (max-width:650px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top:-4rem;
+    }
+    .product-pic-desktop{
+        display: none;
+    }
+    .product-pic-mobile{
+        display: block;
+        object-fit: cover;
+        margin-top: 12rem;
+        border-radius: 14px 14px 0px 0px;
+    }
+    .right-section{
+        border-radius: 0px 0px 14px 14px ;
+    }
+}
